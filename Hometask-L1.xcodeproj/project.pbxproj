@@ -13,6 +13,7 @@
 		8BCFB7261D4BFB88001478BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7241D4BFB88001478BF /* Main.storyboard */; };
 		8BCFB7281D4BFB88001478BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7271D4BFB88001478BF /* Assets.xcassets */; };
 		8BCFB72B1D4BFB88001478BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7291D4BFB88001478BF /* LaunchScreen.storyboard */; };
+		8BCFB7331D4BFFD2001478BF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7321D4BFFD2001478BF /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8BCFB7271D4BFB88001478BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCFB72A1D4BFB88001478BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BCFB72C1D4BFB88001478BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCFB7321D4BFFD2001478BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8BCFB7211D4BFB88001478BF /* ViewController.h */,
 				8BCFB7221D4BFB88001478BF /* ViewController.m */,
 				8BCFB7241D4BFB88001478BF /* Main.storyboard */,
+				8BCFB7321D4BFFD2001478BF /* Media.xcassets */,
 				8BCFB7271D4BFB88001478BF /* Assets.xcassets */,
 				8BCFB7291D4BFB88001478BF /* LaunchScreen.storyboard */,
 				8BCFB72C1D4BFB88001478BF /* Info.plist */,
@@ -110,6 +113,7 @@
 				TargetAttributes = {
 					8BCFB7171D4BFB88001478BF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9Q49XN2FBL;
 					};
 				};
 			};
@@ -138,6 +142,7 @@
 			files = (
 				8BCFB72B1D4BFB88001478BF /* LaunchScreen.storyboard in Resources */,
 				8BCFB7281D4BFB88001478BF /* Assets.xcassets in Resources */,
+				8BCFB7331D4BFFD2001478BF /* Media.xcassets in Resources */,
 				8BCFB7261D4BFB88001478BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +270,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Hometask-L1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AV.Hometask-L1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -276,10 +286,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Hometask-L1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "AV.Hometask-L1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -302,6 +317,7 @@
 				8BCFB7311D4BFB88001478BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
