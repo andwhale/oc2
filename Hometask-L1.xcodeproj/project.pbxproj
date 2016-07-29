@@ -14,9 +14,11 @@
 		8BCFB7281D4BFB88001478BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7271D4BFB88001478BF /* Assets.xcassets */; };
 		8BCFB72B1D4BFB88001478BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7291D4BFB88001478BF /* LaunchScreen.storyboard */; };
 		8BCFB7331D4BFFD2001478BF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFB7321D4BFFD2001478BF /* Media.xcassets */; };
+		AB412DC7F767EBB56CC6E0D8 /* libPods-Hometask-L1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8A51BFB564EC67693B3368 /* libPods-Hometask-L1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D8A51BFB564EC67693B3368 /* libPods-Hometask-L1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hometask-L1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCFB7181D4BFB88001478BF /* Hometask-L1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hometask-L1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCFB71C1D4BFB88001478BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BCFB71E1D4BFB88001478BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		8BCFB72A1D4BFB88001478BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BCFB72C1D4BFB88001478BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCFB7321D4BFFD2001478BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
+		BF06A6B9D264AED88CA76CE0 /* Pods-Hometask-L1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hometask-L1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hometask-L1/Pods-Hometask-L1.release.xcconfig"; sourceTree = "<group>"; };
+		DC4C3D34A65BF623131CFC89 /* Pods-Hometask-L1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hometask-L1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hometask-L1/Pods-Hometask-L1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB412DC7F767EBB56CC6E0D8 /* libPods-Hometask-L1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B7A3A0957C820DF8DDF0BF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C3D34A65BF623131CFC89 /* Pods-Hometask-L1.debug.xcconfig */,
+				BF06A6B9D264AED88CA76CE0 /* Pods-Hometask-L1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B9017F7BBF8E4A7B2133203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A51BFB564EC67693B3368 /* libPods-Hometask-L1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BCFB70F1D4BFB88001478BF = {
 			isa = PBXGroup;
 			children = (
 				8BCFB71A1D4BFB88001478BF /* Hometask-L1 */,
 				8BCFB7191D4BFB88001478BF /* Products */,
+				4B7A3A0957C820DF8DDF0BF3 /* Pods */,
+				5B9017F7BBF8E4A7B2133203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BCFB72F1D4BFB88001478BF /* Build configuration list for PBXNativeTarget "Hometask-L1" */;
 			buildPhases = (
+				CA1FFB9E08555449D3A92A0A /* [CP] Check Pods Manifest.lock */,
 				8BCFB7141D4BFB88001478BF /* Sources */,
 				8BCFB7151D4BFB88001478BF /* Frameworks */,
 				8BCFB7161D4BFB88001478BF /* Resources */,
+				BB331E3604FE6922853F899C /* [CP] Embed Pods Frameworks */,
+				9D4DEE9450B9D6DDD194E230 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D4DEE9450B9D6DDD194E230 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hometask-L1/Pods-Hometask-L1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB331E3604FE6922853F899C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hometask-L1/Pods-Hometask-L1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1FFB9E08555449D3A92A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BCFB7141D4BFB88001478BF /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		8BCFB7301D4BFB88001478BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4C3D34A65BF623131CFC89 /* Pods-Hometask-L1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -284,6 +360,7 @@
 		};
 		8BCFB7311D4BFB88001478BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF06A6B9D264AED88CA76CE0 /* Pods-Hometask-L1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
